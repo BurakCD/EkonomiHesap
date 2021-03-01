@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Esneklik Hesap</string>
+    <string name="firstPriceTab">İlk Fiyat - Gelir - X malı</string>
+    <string name="secondPriceTab">Son Fiyat - Gelir - X malı</string>
+    <string name="firstDemandTab">İlk Talep - Arz - Z malı</string>
+    <string name="secondDemandTab">Son Talep - Arz - Z malı</string>
+    <string name="crossElasticityOfDemand">talebin çapraz esnekliği</string>
+    <string name="incomeElasticityOfDemand">talebin gelir esnekliği</string>
+    <string name="priceElasticityOfDemand">talebin fiyat esnekliği</string>
+    <string name="priceElasticityOfSupply">arzın fiyat esnekliği</string>
+    <string name="results">Sonuç</string>
+    <string name="elasticity">Esneklik</string>
+    <string name="nullWarning">Boş bırakılamaz!</string>
+    <string name="divideZero">Sıfır ile bölünemez!</string>
+    <string name="autoFillHintFP">Bu kısıma fiyat, gelir veya x malının ilk değerini girmelisiniz.</string>
+    <string name="autoFillHintLP">Bu kısıma fiyat, gelir veya x malının son değerini girmelisiniz.</string>
+    <string name="autoFillHintFD">Bu kısıma talep, arz veya z malının son değerini girmelisiniz.</string>
+    <string name="autoFillHintLD">Bu kısıma talep, arz veya z malının son değerini girmelisiniz.</string>
+
+</resources>

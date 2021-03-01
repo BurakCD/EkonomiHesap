@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/elasticity"
+        android:layout_width="358dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/elasticity"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <EditText
+        android:id="@+id/lastPriceIncomeXProduct"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:autofillHints="@string/autoFillHintLP"
+        android:backgroundTint="@color/purple_700"
+        android:ems="10"
+        android:hint="@string/secondPriceTab"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstPriceIncomeXProduct" />
+
+    <EditText
+        android:id="@+id/firstPriceIncomeXProduct"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7dp"
+        android:autofillHints="@string/autoFillHintFP"
+        android:backgroundTint="@color/purple_700"
+        android:ems="10"
+        android:hint="@string/firstPriceTab"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstDemandSupplyYProduct"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:autofillHints="@string/autoFillHintFD"
+        android:backgroundTint="@color/purple_700"
+        android:ems="10"
+        android:hint="@string/firstDemandTab"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastPriceIncomeXProduct" />
+
+    <EditText
+        android:id="@+id/lastDemandSupplyYProduct"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:autofillHints="@string/autoFillHintLD"
+        android:backgroundTint="@color/purple_700"
+        android:ems="10"
+        android:hint="@string/secondDemandTab"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDemandSupplyYProduct" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="358dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/results"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arfies" />
+
+    <Button
+        android:id="@+id/yayes"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="yayEsnekligi"
+        android:text="@string/crossElasticityOfDemand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastDemandSupplyYProduct" />
+
+    <Button
+        android:id="@+id/tagees"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:onClick="noktaEsnekligi"
+        android:text="@string/incomeElasticityOfDemand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yayes" />
+
+    <Button
+        android:id="@+id/tafies"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:onClick="talebinFiyatEsnekligi"
+        android:text="@string/priceElasticityOfDemand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagees" />
+
+    <Button
+        android:id="@+id/arfies"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:onClick="arzinFiyatEsnekligi"
+        android:text="@string/priceElasticityOfSupply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tafies" />
+
+    <Switch
+        android:id="@+id/percentSwitch"
+        android:layout_width="62dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="77dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="disableTextEdits"
+        android:text="%"
+        android:textColor="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:thumbTint="@color/design_default_color_primary_dark"
+        android:trackTint="@color/design_default_color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
